@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<h1>👨‍🎓 STUDENT MANAGEMENT SYSTEM</h1>
+
+<p>
+Student Registration & Profile Management
+</p>
+
+</header>
+
+
+<hr>
+
+
+
+<table width="100%" border="1">
+
+
+<tr>
+
+
+<!-- SIDEBAR -->
+
+
+<td width="20%" valign="top">
+
+
+<h2>MENU</h2>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+🏠 Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="student.html">
+👨‍🎓 Students
+</a>
+</li>
+
+
+<li>
+<a href="student_records.html">
+📋 Student Records
+</a>
+</li>
+
+
+<li>
+📚 Academics
+</li>
+
+
+<li>
+📅 Attendance
+</li>
+
+
+<li>
+💰 School Fees
+</li>
+
+
+<li>
+🩺 Health Records
+</li>
+
+
+<li>
+📖 Library
+</li>
+
+
+<li>
+👨‍🏫 Teachers
+</li>
+
+
+<li>
+📄 Reports
+</li>
+
+
+<li>
+⚙ Settings
+</li>
+
+
+</ul>
+
+
+</td>
+
+
+
+<!-- MAIN CONTENT -->
+
+
+<td width="80%" valign="top">
+
+
+
+<h2>
+Student Registration Form
+</h2>
+
+
+
+<!-- ADMISSION DETAILS -->
+
+
+<fieldset>
+
+<legend>
+Admission Information
+</legend>
+
+
+
+<table  border="1 " width="100%" cellpadding="8">
+
+
+<tr>
+
+<td>
+Admission Number
+</td>
+
+<td>
+<input type="text" id="admission">
+</td>
+
+
+<td>
+Admission Date
+</td>
+
+<td>
+<input type="date">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Student Status
+</td>
+
+
+<td>
+
+
+<select>
+
+<option>
+Active
+</option>
+
+<option>
+Transferred
+</option>
+
+<option>
+Graduated
+</option>
+
+
+</select>
+
+
+</td>
+
+
+
+<td>
+Boarding Status
+</td>
+
+
+<td>
+
+
+<select>
+
+
+<option>
+Day Scholar
+</option>
+
+
+<option>
+Boarder
+</option>
+
+
+</select>
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+<!-- PERSONAL INFORMATION -->
+
+
+<fieldset>
+
+
+<legend>
+Personal Information
+</legend>
+
+
+
+<table width="100%" cellpadding="8">
+
+
+<tr>
+
+
+<td>
+ Name
+</td>
+
+
+<td>
+<input type="text" id="firstName">
+<input type="text" id="lastName">
+</td>
+
+
+<td>
+Last Name
+</td>
+
+
+
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Gender
+</td>
+
+
+<td>
+
+
+<select id="gender"></select>
+
+<option value="">Select Gender</option>
+
+<option>Male</option>
+<option>Female</option>
+
+
+</select>
+
+
+</td>
+
+
+<td>
+Date Of Birth
+</td>
+
+
+<td>
+<input type="date">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Nationality
+</td>
+
+
+<td>
+<input type="text" id="nationality">
+</td>
+
+
+<td>
+Religion
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Birth Certificate No.
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+<td>
+Student Photo
+</td>
+
+
+<td>
+<input type="file">
+</td>
+
+
+
+</tr>
+
+
+</table>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+<!-- CONTACT -->
+
+
+<fieldset>
+
+
+<legend>
+Contact Information
+</legend>
+
+
+
+<table width="100%" cellpadding="8">
+
+
+<tr>
+
+
+<td>
+Phone Number
+</td>
+
+
+<td>
+<input type="tel" id="phone">
+</td>
+
+
+<td>
+Email
+</td>
+
+
+<td>
+<input type="email" id="email">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Home Address
+</td>
+
+
+<td colspan="3">
+
+<textarea rows="3" cols="50"></textarea>
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+<!-- PARENT INFORMATION -->
+
+
+<fieldset>
+
+
+<legend>
+Parent / Guardian Information
+</legend>
+
+
+
+<table width="100%" cellpadding="8">
+
+
+<tr>
+
+
+<td>
+Father Name
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+<td>
+Phone
+</td>
+
+
+<td>
+<input type="tel">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Mother Name
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+<td>
+Phone
+</td>
+
+
+<td>
+<input type="tel">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Guardian Name
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+<td>
+Relationship
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+
+<!-- MEDICAL INFORMATION -->
+
+
+<fieldset>
+
+
+<legend>
+Health Information
+</legend>
+
+
+
+<table width="100%" cellpadding="8">
+
+
+<tr>
+
+
+<td>
+Blood Group
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+
+<td>
+Allergies
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Medical Condition
+</td>
+
+
+<td colspan="3">
+
+<textarea rows="4" cols="60"></textarea>
+
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</fieldset>
+
+
+
+
+<br>
+
+
+
+
+<!-- ACADEMIC PLACEMENT -->
+
+
+<fieldset>
+
+
+<legend>
+Academic Placement
+</legend>
+
+
+
+<table width="100%" cellpadding="8">
+
+
+<tr>
+
+
+<td>
+Class
+</td>
+
+
+<td>
+
+<select>
+
+<option>
+Grade 7
+</option>
+
+<option>
+Grade 8
+</option>
+
+<option>
+Grade 9
+</option>
+
+<option>
+Form 1
+</option>
+
+<option>
+Form 4
+</option>
+
+
+</select>
+
+
+</td>
+
+
+
+<td>
+Stream
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+Class Teacher
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+<td>
+House
+</td>
+
+
+<td>
+<input type="text">
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+
+<!-- DOCUMENTS -->
+
+
+<fieldset>
+
+
+<legend>
+Student Documents
+</legend>
+
+
+<ul>
+
+
+<li>
+Birth Certificate
+<input type="file">
+</li>
+
+
+<li>
+Previous Report Form
+<input type="file">
+</li>
+
+
+<li>
+Medical Documents
+<input type="file">
+</li>
+
+
+</ul>
+
+
+</fieldset>
+
+
+
+<br>
+
+
+
+
+<center>
+
+
+<button id="registerBtn">Register Student</button>
+
+
+<button>
+Update Student
+</button>
+
+
+<button>
+Clear Form
+</button>
+
+
+</center>
+
+
+
+<hr>
+
+
+
+
+<!-- STUDENT LIST -->
+
+
+<h2>
+Registered Students
+</h2>
+
+
+
+
+<tbody id="studentTableBody"></tbody>
+
+<table border="1" width="100%" cellpadding="8">
+
+    <thead>
+
+        <tr>
+
+            <th>Admission No</th>
+
+            <th>Student Name</th>
+
+            <th>Gender</th>
+
+            <th>Class</th>
+
+            <th>Status</th>
+
+            <th>Action</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="studentTableBody">
+
+        <!-- JavaScript will automatically insert student records here -->
+
+    </tbody>
+
+</table>
+
+<hr>
+
+
+
+<footer>
+
+<center>
+
+Student Management System
+
+<br>
+
+Designed by Fidel Michael
+
+</center>
+
+
+</footer>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

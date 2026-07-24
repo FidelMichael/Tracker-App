@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<h1>🏫 STUDENT MANAGEMENT SYSTEM</h1>
+
+<p>
+Siaya Community Digital Hub |
+Academic Year 2026 |
+Term 2
+</p>
+
+
+<p id="currentDate"></p>
+
+
+
+</header>
+
+
+<hr>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+
+<table width="100%" border="1">
+
+
+<tr>
+
+
+<td width="20%" valign="top">
+
+
+<h2>MENU</h2>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+🏠 Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="student.html">
+👨‍🎓 Students
+</a>
+</li>
+
+
+<li>
+<a href="student_records.html">
+📋 Student Records
+</a>
+</li>
+
+
+<li>
+📚 Academics
+</li>
+
+
+<li>
+📅 Attendance
+</li>
+
+
+<li>
+💰 School Fees
+</li>
+
+
+<li>
+🩺 Health Records
+</li>
+
+
+<li>
+📖 Library
+</li>
+
+
+<li>
+👨‍🏫 Teachers
+</li>
+
+
+<li>
+🚌 Transport
+</li>
+
+
+<li>
+🏆 Activities
+</li>
+
+
+<li>
+📄 Reports
+</li>
+
+
+<li>
+⚙ Settings
+</li>
+
+
+</ul>
+
+
+</td>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+
+<td width="80%" valign="top">
+
+
+<h2>
+Dashboard Overview
+</h2>
+
+
+<!-- STATISTICS -->
+
+
+<table border="1" width="100%" cellpadding="10">
+
+
+<tr>
+
+
+<th>
+Total Students
+</th>
+
+
+<th>
+Teachers
+</th>
+
+
+<th>
+Attendance
+</th>
+
+
+<th>
+Fees Collection
+</th>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+    <h2 id="totalStudents">0</h2>
+
+<p>Total Students</p>
+</td>
+
+
+<td>
+Teachers: 42
+</td>
+
+
+<td>
+Attendance: 94%
+</td>
+
+
+<td>
+Fees: KSh 4,500,000
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+<br>
+
+
+
+<!-- QUICK ACTIONS -->
+
+
+<h2>
+Quick Actions
+</h2>
+
+
+<table border="1" width="100%" cellpadding="10">
+
+
+<tr>
+
+
+<td>
+<a href="student.html">
+➕ Register Student
+</a>
+</td>
+
+
+<td>
+📅 Mark Attendance
+</td>
+
+
+<td>
+💰 Record Fees
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+📚 Enter Results
+</td>
+
+
+<td>
+🩺 Medical Check
+</td>
+
+
+<td>
+📖 Library Entry
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+<hr>
+
+
+<!-- ANNOUNCEMENTS -->
+
+
+<h2>
+📢 Announcements
+</h2>
+
+
+<ul>
+
+<li>
+Mid-term examination begins Monday.
+</li>
+
+<li>
+Parents meeting scheduled for Friday.
+</li>
+
+<li>
+Sports day preparations ongoing.
+</li>
+
+<li>
+Library books inspection next week.
+</li>
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<!-- EVENTS -->
+
+
+<h2>
+📅 Upcoming Events
+</h2>
+
+
+<table border="1" width="100%">
+
+
+<tr>
+
+<th>Date</th>
+
+<th>Event</th>
+
+<th>Venue</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+12 Sept
+</td>
+
+<td>
+Parents Meeting
+</td>
+
+<td>
+Main Hall
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+20 Sept
+</td>
+
+<td>
+Science Fair
+</td>
+
+<td>
+Laboratory
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+<hr>
+
+
+
+<!-- PERFORMANCE -->
+
+
+<h2>
+📊 Academic Performance Summary
+</h2>
+
+
+
+<table border="1" width="100%">
+
+
+<tr>
+
+<th>
+Grade
+</th>
+
+<th>
+Students
+</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+A
+</td>
+
+<td>
+75
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+B
+</td>
+
+<td>
+210
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+C
+</td>
+
+<td>
+240
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+D
+</td>
+
+<td>
+120
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+<hr>
+
+
+
+<!-- SCHOOL INFO -->
+
+
+<h2>
+🏫 School Information
+</h2>
+
+
+
+<table border="1" width="100%">
+
+
+<tr>
+
+<td>
+School Name
+</td>
+
+<td>
+Siaya Community Digital Hub 
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Principal
+</td>
+
+<td>
+Madam Tabitha Ogutu
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Location
+</td>
+
+<td>
+Bondo - Siaya
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Phone
+</td>
+
+<td>
+0790139647
+</td>
+
+</tr>
+
+
+
+</table>
+
+
+
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+<hr>
+
+
+
+<footer>
+
+<center>
+
+<p>
+Student Management System
+</p>
+
+<p>
+Desidned by Fidel Michael
+</p>
+
+
+</center>
+
+
+</footer>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
